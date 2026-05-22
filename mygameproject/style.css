@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #003C43;
+}
+
+.panel{
+    overflow: hidden;
+    border-radius: 1vw;
+    height: 36vw;
+    width: 80vw;
+    background-color: #fff;
+
+}
+
+
+.panel-top{
+    /* overflow: hidden; */
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background-color: #5ecec3;
+    color: #fff;
+}
+
+
+.elements{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.elements h3{
+    color: #003C43;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.box{
+    font-size: 1.6vw;
+    font-weight: 900;
+    background-color: #003C43;
+    padding: 0.4vw 0.5vw;
+    border-radius: 0.2vw;
+}
+
+
+.panel-bottom{
+    flex-wrap: wrap;
+    gap: 0.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 1vw;
+    width: 100;
+    height: calc(100% - 40px);
+    background-color: #fff;
+}
+
+#bubble{
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width:30px;
+    background-color: #003C43;
+    border-radius: 50%;
+}
+
+#bubble:hover{
+    cursor: pointer;
+    background-color: rgb(255, 81, 0);
+}
+
+@media(max-width:600px){
+    .panel{
+        height: 80%;
+        width: 80%;
+    }
+
+    .panel-top{
+        height: 50px;
+        width: 100%;
+    }
+
+    .elements{
+        gap: 0,8vw;
+    }
+
+    .elements h3{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    
+
+    .box{
+        font-size:3vw;
+        font-weight: 900;
+        padding: 0.1vw 0.9vw;
+        border-radius: 50%;
+    }
+
+    .bubble{
+        font-size: 20px;
+        height: 20px;
+        width:20px;
+        gap:1vw;
+    }
+
+    .panel-bottom{
+        height: 19vw;
+        width: 100%;
+    }
+    
+
+}
